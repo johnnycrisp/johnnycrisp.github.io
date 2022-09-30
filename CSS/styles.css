@@ -1,0 +1,36 @@
+.navbar .navbar-brand {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+
+
+body {
+    min-width: 300px;
+  overflow: hidden;
+
+}
+
+.navbar ul {
+  align-items: center;
+}
+
+/* .hero {
+    background-color: #333735;
+} */
+
+/* .hero p{
+    color: #A1A48C;
+} */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    /* #A1A48C; */
+    /* color: #943F3B ; */
+    /* third: #E5E1D5; */
+}
+
