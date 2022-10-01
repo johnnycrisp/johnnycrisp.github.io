@@ -2,14 +2,18 @@
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
+  transition: transform 1.9s linear;
+  transition-delay: .1s;
 }
 
-
+.navbar-hide {
+  transform: translateX(580px);
+}
 
 body {
-    min-width: 300px;
+  min-width: 300px;
   overflow: hidden;
-
+  background-color: #FADC89;
 }
 
 .navbar ul {
@@ -17,7 +21,7 @@ body {
 }
 
 /* .hero {
-    background-color: #333735;
+    text-align: center;
 } */
 
 /* .hero p{
@@ -25,12 +29,177 @@ body {
 } */
 
 html {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-    /* #A1A48C; */
-    /* color: #943F3B ; */
-    /* third: #E5E1D5; */
+/* h1 {
+    #A1A48C; 
+    color: #943F3B ;
+     third: #E5E1D5;
+} */
+
+/* Cube */
+/* 
+.cube-container {
+    perspective: 800px;
+    margin-left: 50%;
 }
 
+.photo-cube {
+    transition: transform 120s linear;
+    width: 25px;
+    height: 25px;
+    transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+    transform: rotateY(-10080deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.front {
+    transform: translateZ(12.5px);
+    background-color: #FF52E8;
+}
+
+.back {
+    transform: translateZ(-12.5px) rotateY(270deg);
+    transform-origin: center left;
+    background-color: #DEB618;
+}
+
+.left {
+    transform: rotateY(-270deg) translateX(12.5px);
+    transform-origin: top right;
+    background-color: #27F5CF;
+    
+}
+
+.right {
+    transform: translateZ(-12.5px) rotateY(-180deg);
+    background-color: #D982E0;
+} */
+
+/* // Cube animations */
+
+@keyframes spin1 {
+    to {
+      transform: perspective(600px) rotateX(360deg) rotateY(450deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin2 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(630deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin3 {
+    0% {
+      transform: perspective(600px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(450deg) rotateY(0deg) rotateZ(-360deg);
+    }
+  }
+  @keyframes spin4 {
+    0% {
+      transform: perspective(600px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(270deg) rotateY(0deg) rotateZ(360deg);
+    }
+  }
+  @keyframes spin5 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin6 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(540deg) rotateZ(0deg);
+    }
+  }
+
+  /* Cube styles */
+
+  .wrapper {
+     margin-top: 4em;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+  }
+
+  .box3d div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    opacity: 0.95;
+    transform-origin: 50% 50% -80px;
+  }
+
+    .box3d {
+    margin-top: 1em;
+    width: 60px;
+    height: 60px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+   .p1 {
+    background:#FF52E8;
+    transform: perspective(600px) rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+    animation: spin1 10s infinite linear;
+  }
+
+  .p1 img, .p2 img, .p3 img, .p4 img, .p5 img, .p6 img {
+    height: 60px;
+    width: 60px;
+    margin: .5em;
+  }
+
+  .p2 {
+    background: #DEB618;
+    color: black;
+    animation: spin2 10s infinite linear;
+  }
+  
+  .p3 {
+    background: #27F5CF;
+    color: black;
+    animation: spin3 10s infinite linear;
+  }
+  
+  .p4 {
+    background:#D982E0;
+    animation: spin4 10s infinite linear;
+  }
+  
+  .p5 {
+    background: #5021EB;
+    animation: spin5 10s infinite linear;
+  }
+  
+  .p6 {
+    background: #27F5CF;
+    animation: spin6 10s infinite linear;
+  }
