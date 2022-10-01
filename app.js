@@ -11,7 +11,7 @@ logoImg.style.opacity = '0';
     } else {
 
 logoImg.style.opacity = '1';
-logoImg.classList.remove('navbar-hide');
+setTimeout(logoImg.classList.remove('navbar-hide'), 1000);
   }
 });
 
