@@ -19,6 +19,10 @@ body {
   align-items: center;
 }
 
+.navbar ul li {
+  cursor: pointer;
+}
+
 .hero {
     margin-bottom: 3rem;
 }
@@ -36,10 +40,19 @@ body {
 }
 
 .footer-container svg {
+    cursor: pointer;
     margin: 2rem;
     height: 30px;
     width: 30px;
+    transition: transform .2s ease-in-out, border-bottom .2s ease-in-out;
+    padding-bottom: 3px;
+    border-bottom: 0px #DEB618 solid;
 }
+
+.footer-container svg:hover, .navbar ul li:hover, .card-container img:hover {
+  transform: scale(1.15) rotate(4deg);
+}
+
 
 .card-container {
     display: flex;
@@ -54,6 +67,7 @@ height: 150px;
 width: 150px;
 border-radius: 8px;
 margin-bottom: 1.5rem;
+cursor: pointer;
 }
 
 
@@ -140,7 +154,7 @@ html {
     width: 60px;
     height: 60px;
     opacity: 0.95;
-    transform-origin: 50% 50% -80px;
+    transform-origin: 50% 50% -60px;
   }
 
     .box3d {
