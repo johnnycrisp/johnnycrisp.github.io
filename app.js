@@ -5,17 +5,12 @@ const logoImg = document.querySelector('.navbar img');
 navToggle.addEventListener('click', ()=>{
     if(navTogglerDiv.getAttribute('aria-expanded') === 'true'){
         
-//            setTimeout(() => {
-//    logoImg.classList.add('navbar-hide');
-// }, "900")
-
 logoImg.classList.add('navbar-hide');
+logoImg.style.opacity = '0';
         
     } else {
-//          setTimeout(() => {
-//    logoImg.classList.remove('navbar-hide');
-// }, "800")
 
+logoImg.style.opacity = '1';
 logoImg.classList.remove('navbar-hide');
   }
 });
