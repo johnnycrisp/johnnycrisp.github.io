@@ -128,12 +128,17 @@ body {
   border-radius: 12px;
 }
 
+a, a:visited {
+  color: rgb(33, 37, 41);
+}
+
 .card-container img, .card-svg svg {
   height: 16rem;
   width: 16rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 .page-break {
