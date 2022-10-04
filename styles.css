@@ -128,7 +128,7 @@ body {
   border-radius: 12px;
 }
 
-a, a:visited {
+.container a, .container a:visited {
   color: rgb(33, 37, 41);
 }
 
