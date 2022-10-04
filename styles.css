@@ -6,6 +6,15 @@ ul, li, ol {
   list-style: none;
 }
 
+p, .btn {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 .navbar .navbar-brand {
   border-radius: 50%;
   height: 3rem;
@@ -14,15 +23,16 @@ ul, li, ol {
   transition-delay: 0.1s;
 }
 
-.card-container p {
-  margin-bottom: 0;
-}
 
 .p-wrapper {
   padding-bottom: 6px;
   margin: 1px;
-  height: 6rem;
+  height: 20%;
   max-width: 350px;
+}
+
+.p-wrapper p {
+  padding-bottom: 4px;
 }
 
 h1 {
@@ -54,12 +64,6 @@ body {
 
 .content {
   min-height: calc(100vh - 90px);
-}
-
-
-.card-content-container li {
-  background-color:#ff52e8;
-  border: 1px white solid;
 }
 
 .footer-container {
@@ -97,7 +101,7 @@ body {
   justify-content: center;
   text-align: center;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.1rem;
   box-shadow: rgba(217, 130, 224, 0.4) 0px 2px 4px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: background-color 0s linear, transform 0.4s ease-in;
   min-width: 312px;
