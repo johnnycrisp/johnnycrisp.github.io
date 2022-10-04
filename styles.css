@@ -21,7 +21,7 @@ ul, li, ol {
 .p-wrapper {
   padding-bottom: 6px;
   margin: 1px;
-  height: 80px;
+  height: 6rem;
   max-width: 350px;
 }
 
@@ -153,6 +153,14 @@ html {
   height: 5rem;
   margin: 1rem;
 }
+
+.skills h2 {
+    text-align: center;
+  }
+
+  .content-about h2 {
+    margin-bottom: 1rem; 
+  }
 
 /* Cube keyframes */
 
@@ -293,5 +301,9 @@ html {
 
   .education-container .img-container {
     text-align: right;
+  }
+
+  .skills h2 {
+    text-align: left;
   }
 }
