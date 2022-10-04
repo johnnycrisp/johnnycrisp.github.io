@@ -94,6 +94,12 @@ body {
   background-color: #fadc89;
 }
 
+
+
+.education-container a:last-child, .experience a:last-child {
+  margin-left: .8rem;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
