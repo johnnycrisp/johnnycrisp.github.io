@@ -58,6 +58,10 @@ body {
   margin-top: 16px;
 }
 
+.owl-carousel {
+  cursor: pointer;
+}
+
 footer a {
   margin: 2rem;
   width: 35px;

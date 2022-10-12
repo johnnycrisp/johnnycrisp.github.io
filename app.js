@@ -15,9 +15,26 @@ setTimeout(logoImg.classList.remove('navbar-hide'), 1000);
   }
 });
 
-// $(document).ready(function(){
-//   $(".owl-carousel").owlCarousel();
-// });
+
+$(".owl-carousel").owlCarousel({
+  autoplay: true,
+  autoplaySpeed: 6000,
+  smartSpeed: 6000,
+  slideTransition: 'linear',
+  items:9,
+  loop:true,
+  margin: 10
+});
+
+//  jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
+
+//     function setSpeed(){
+//         jQuery('.owl-carousel').trigger('play.owl.autoplay',[6000]);
+//     }
+
+
+
+      
 
 // var owl = $('.owl-carousel');
 // owl.owlCarousel({
