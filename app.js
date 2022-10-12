@@ -28,11 +28,13 @@ $(".owl-carousel").owlCarousel({
   center: true
 });
 
-//  jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
-
-//     function setSpeed(){
-//         jQuery('.owl-carousel').trigger('play.owl.autoplay',[6000]);
-//     }
+// carousel.trigger('stop.owl.autoplay');
+// var is_playing = false;
+// carousel.on('mouseenter',function(e){
+// 	if(is_playing===false) $(this).trigger('to.owl.carousel',1);
+// 	$(this).trigger('play.owl.autoplay');
+// 	is_playing = true;
+// });
 
 
 
