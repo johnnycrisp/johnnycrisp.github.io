@@ -21,9 +21,11 @@ $(".owl-carousel").owlCarousel({
   autoplaySpeed: 6000,
   smartSpeed: 6000,
   slideTransition: 'linear',
-  items:9,
+  items: 9,
+  autoWidth: true,
   loop:true,
-  margin: 10
+  margin: 10,
+  center: true
 });
 
 //  jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
